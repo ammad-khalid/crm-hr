@@ -5,7 +5,7 @@ phases:
     runtime-versions:
       docker: latest
     commands:
-      - apt install docker.io -y
+      - echo install stage
   pre_build:
     commands:
       - echo Entered the pre_build phase...
