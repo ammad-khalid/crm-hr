@@ -15,9 +15,9 @@ phases:
       - echo Entered the build phase...
       - echo Building the Docker image...
      # - cd crm-hr
-     # - docker build -t $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$ENV .
-      - docker build -t crm-hr .
-      - docker tag crm-hr $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$ENV
+      - docker build -t $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$ENV .
+      #- docker build -t crm-hr .
+      #- docker tag crm-hr $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$ENV
   post_build:
     commands:
       - echo Entered the post_build phase...
