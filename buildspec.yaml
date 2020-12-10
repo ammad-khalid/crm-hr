@@ -1,22 +1,13 @@
 version: 0.2
     
 phases:
-  install:
-    runtime-versions:
-      nodejs: latest
-    commands:
-      - echo Installing app dependencies...
-      - echo Run "yarn install"...
-      - yarn install
-      - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | head -c 7) 
+  
   pre_build:
     commands:
       - echo Entered the pre_build phase...
       - echo Logging in to Amazon ECR...
-      - $(aws ecr get-login --no-include-email --region us-east-2)
-      - echo Build files...
-      - yarn clean
-      - yarn build
+      - $(aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION)
+      
   build:
     commands:
       - echo Entered the build phase...
