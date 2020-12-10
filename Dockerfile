@@ -19,7 +19,8 @@ Run apt install nodejs -y
 Run curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
 Run echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
 Run apt-get update
-Run apt-get install yarn
+Run apt-get install yarn -y
+Run apt-get install vim -y
 
 #Run cd /var/www/ && git clone https://clinichrcrm:30186b617444c6f31b5dc759b88ecc7dc9b96991@github.com/clinichrcrm/aksiscrm.git && cd aksiscrm/ && composer update -n && composer install -n
 #Run chmod -R 777 /var/www/aksiscrm/
