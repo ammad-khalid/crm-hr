@@ -41,4 +41,5 @@ phases:
       - echo List directory
       - ls -la
       - echo Push the latest image to cluster
+      - aws sts get-caller-identity
       - kubectl apply -f deployment
