@@ -1,5 +1,9 @@
 version: 0.2
-    
+env:
+  parameter-store:
+    AWS_ACCESS_KEY_ID: "access-key-id"
+    AWS_SECRET_ACCESS_KEY: "access-key-secret"
+  git-credential-helper: yes    
 phases:
   install:
       commands:
