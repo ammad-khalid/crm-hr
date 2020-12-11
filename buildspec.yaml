@@ -30,8 +30,8 @@ phases:
       - echo Pushing the Docker image...
       - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME
      
-  deploy:
-    commands:
+  #deploy:
+   # commands:
       - echo Entered the build phase...
       - echo Change directory to secondary source
       #- cd $CODEBUILD_SRC_DIR
