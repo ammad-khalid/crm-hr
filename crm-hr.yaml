@@ -48,7 +48,7 @@ spec:
       serviceAccountName: clinichrcrm
       containers:
       - name: clinichrcrm
-        image: "779160054397.dkr.ecr.us-east-2.amazonaws.com/crm-hr:v2"
+        image: "779160054397.dkr.ecr.us-east-2.amazonaws.com/crm-hr:latest"
         imagePullPolicy: IfNotPresent
         ports:
         - name: http
